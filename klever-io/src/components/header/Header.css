@@ -2,16 +2,20 @@
   font-weight: bold; 
 }
 
-.logo {
-  margin: 20px;
+span {
+  margin-left: 5px;
   text-align: center;
+}
+
+.logo {
+  margin: 3% 40%;
 }
 
 .title {
   display: flex;
   font-size: x-large;
   justify-content: space-between;
-  margin: 10px 510px 20px 505px;
+  margin: 2% 30% 2% 28.5%;
   text-align: center;
 }
 

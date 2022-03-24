@@ -6,7 +6,7 @@ function TableToken() {
   
   useEffect(() => {
     const loadStorage = localStorage.getItem('tokens');
-    if (!loadStorage) localStorage.setItem('tokens', JSON.stringify([{token:'KLV', balance: '121,121.21'}, {token:'DVKS', balance: '121,121.21'}]));
+    if (!loadStorage) localStorage.setItem('tokens', JSON.stringify([]));
     const storageObj = JSON.parse(localStorage.getItem('tokens'));
     setTokens(storageObj);
   }, []);
