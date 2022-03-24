@@ -1,0 +1,35 @@
+* {
+  background-color: #14142c;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+.title-token {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 510px 0 530px;
+}
+
+.row-token {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 510px 10px 500px;
+}
+
+.row-token div {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.row-token button {
+  border: none;
+  display: flex;
+  flex-grow: 0;
+}
