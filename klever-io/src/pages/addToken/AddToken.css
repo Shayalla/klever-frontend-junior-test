@@ -38,6 +38,7 @@ h3 {
 input {
   background-color: white;
   border-radius: 5px;
+  color: black;
   height: 25px;
   margin-bottom: 30px;
 }

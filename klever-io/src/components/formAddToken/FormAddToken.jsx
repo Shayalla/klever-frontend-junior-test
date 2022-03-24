@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
+import AlreadyExists from '../errMessage/AlreadyExists';
+import RequiredField from '../errMessage/RequiredField';
 
 function FormAddToken() {
   const [token, setToken] = useState('');
   const [balance, setBalance] = useState('');
+  const [errToken, setErrToken] = useState(false);
+  const [errBalance, setErrBalance] = useState(false);
+  const [errSave, setErrSave] = useState(false);
   const navigate = useNavigate();
 
   const goHome = () => {
@@ -17,11 +22,12 @@ function FormAddToken() {
   };
 
   const saveToken = () => {
-    if (!token || !balance) return alert("Campos Obrigatórios");
+    if (!token) return setErrToken(true);
+    if (!balance) return setErrBalance(true);
 
     const loadStorage = JSON.parse(localStorage.getItem('tokens'));
     const notUnique = loadStorage.some((elem) => elem.token === token);
-    if (notUnique) return alert("Já existe token adicionado!");
+    if (notUnique) return setErrSave(true);
     
     loadStorage.push({ token, balance });
     localStorage.setItem('tokens', JSON.stringify(loadStorage));
@@ -42,6 +48,7 @@ function FormAddToken() {
       </div>
       <label htmlFor="token">
         Token
+        { errToken && <RequiredField /> }
       </label>
       <input
         type="text"
@@ -51,6 +58,7 @@ function FormAddToken() {
       />
       <label htmlFor="balance">
         Balance
+      { errBalance && <RequiredField /> }
       </label>
       <input
         type="text"
@@ -59,6 +67,7 @@ function FormAddToken() {
         onChange={ handleChange }
       />
       <div className="btn-save">
+        { errSave && <AlreadyExists /> }
         <button
           type="button"
           onClick={ saveToken }
