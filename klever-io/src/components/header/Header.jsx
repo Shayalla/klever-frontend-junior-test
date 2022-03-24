@@ -23,7 +23,7 @@ function Header({ home }) {
 }
 
 Header.propTypes = {
-  home: PropTypes.bool.isRequired,
+  home: PropTypes.bool,
 }; 
 
 export default Header;
