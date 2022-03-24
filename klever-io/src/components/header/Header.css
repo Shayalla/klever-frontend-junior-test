@@ -1,0 +1,23 @@
+* {
+  font-weight: bold; 
+}
+
+.logo {
+  margin: 20px;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  font-size: x-large;
+  justify-content: space-between;
+  margin: 10px 510px 20px 505px;
+  text-align: center;
+}
+
+.btn-add {
+  background-color: #c13ad3;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+}
