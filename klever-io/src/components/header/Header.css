@@ -4,11 +4,11 @@
 
 span {
   margin-left: 5px;
+  text-align: center;
 }
 
 .logo {
-  margin: 20px;
-  text-align: center;
+  margin: 3% 40%;
 }
 
 .title {

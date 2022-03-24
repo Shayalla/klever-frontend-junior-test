@@ -13,7 +13,7 @@ function Header({ home }) {
       </div>
       <div className="title">
         <div>
-          <img src={star} alt="shooting star" width="25px" />
+          <img src={star} alt="shooting star" width="30px" />
           <span>Wish Wallet</span>
         </div>
         {home && <AddTokenButton />}
