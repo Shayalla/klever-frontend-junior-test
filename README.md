@@ -2,7 +2,7 @@
 
 Esse projeto foi desenvolvido por Jéssica Schulze, como um desafio técnico para a Empresa Klever.  
 Foram utilizados React, JavaScript, HTML e CSS nesse projeto.  
- O objetivo é analisar as habilidades dos candidatos, segundo os requisitos deste repositório
+ O objetivo é analisar as habilidades dos candidatos, seguindo os requisitos deste repositório
 [GitHub](https://github.com/klever-io/frontend-junior-test).
 
 ## Instruções para executar
