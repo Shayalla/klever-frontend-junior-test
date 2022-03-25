@@ -8,11 +8,11 @@ function AddTokenButton() {
     <button
       type="button"
       className="btn-add"
-      onClick={ () => navigate('/add-token')}
+      onClick={ () => navigate('/add-token') }
     >
       Add Token
     </button>
   );
-}
+};
 
 export default AddTokenButton;

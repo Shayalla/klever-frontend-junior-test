@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logo from './images/logo.svg'
-import star from './images/shooting-star.svg'
+import logo from './images/logo.svg';
+import star from './images/shooting-star.svg';
 import AddTokenButton from './AddTokenButton';
-import './Header.css'
+import './Header.css';
 
 function Header({ home }) {
   return (
     <main>
       <div className="logo">
-        <img src={logo} alt="logo klever" width="150px" /><br />
+        <img src={logo} alt="logo klever" /><br />
       </div>
       <div className="title">
         <div>
@@ -20,7 +20,7 @@ function Header({ home }) {
       </div>
     </main>
   );
-}
+};
 
 Header.propTypes = {
   home: PropTypes.bool,

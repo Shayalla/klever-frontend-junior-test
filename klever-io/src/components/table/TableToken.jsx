@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
-import edit from './edit.png'
+import edit from './edit.png';
 
 function TableToken() {
   const [tokens, setTokens] = useState([]);
@@ -23,7 +23,7 @@ function TableToken() {
         <div key={index} className="row-token">
           <button
             type="button"
-            onClick={ () => navigate(`/edit-token/${token}`)}
+            onClick={ () => navigate(`/edit-token/${token}`) }
           >
             <img
               src={edit}
@@ -38,6 +38,6 @@ function TableToken() {
       ))}
     </section>
   );
-}
+};
 
 export default TableToken;

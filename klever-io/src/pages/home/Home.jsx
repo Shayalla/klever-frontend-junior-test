@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/header/Header';
 import TableToken from '../../components/table/TableToken';
-import './Home.css'
+import './Home.css';
 
 function Home() {
   return (
@@ -10,6 +10,6 @@ function Home() {
       <TableToken />
     </>
   );
-}
+};
 
 export default Home;

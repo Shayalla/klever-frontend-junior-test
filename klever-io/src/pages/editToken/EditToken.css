@@ -1,3 +1,25 @@
+@media only screen and (max-width: 425px) {  
+  .btn-conteiner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-edit-save {
+  margin-top: 10px;
+  }
+
+  .title-edit-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
 form {
     display: flex;
     flex-direction: column;

@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router';
 function FormEditToken({ token }) {
   const navigate = useNavigate();
   const loadStorage = JSON.parse(localStorage.getItem('tokens'));
-  const [filtered] = loadStorage.filter((elem) => elem.token === token)
-  const index = loadStorage.indexOf(filtered)
+  const [filtered] = loadStorage.filter((elem) => elem.token === token);
+  const index = loadStorage.indexOf(filtered);
   const [editToken, setEditToken] = useState(token);
   const [editBalance, setEditBalance] = useState(filtered.balance);
   
@@ -32,7 +32,7 @@ function FormEditToken({ token }) {
       loadStorage.splice(index, 1);
       localStorage.setItem('tokens', JSON.stringify(loadStorage));
       goHome();
-    }
+    };
   };
 
   console.log(filtered, index);
@@ -86,6 +86,6 @@ function FormEditToken({ token }) {
       </div>
     </form>
   );
-}
+};
 
 export default FormEditToken;

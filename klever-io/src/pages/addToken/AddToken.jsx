@@ -1,7 +1,7 @@
 import React from 'react';
 import FormAddToken from '../../components/formAddToken/FormAddToken';
 import Header from '../../components/header/Header';
-import './AddToken.css'
+import './AddToken.css';
 
 function AddToken() {
   return (
@@ -10,6 +10,6 @@ function AddToken() {
       <FormAddToken />
     </>
   );
-}
+};
 
 export default AddToken;

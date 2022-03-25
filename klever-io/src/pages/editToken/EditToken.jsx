@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router';
 import FormEditToken from '../../components/formEditToken/FormEditToken';
 import Header from '../../components/header/Header';
-import './EditToken.css'
+import './EditToken.css';
 
 function EditToken() {
   const { token } = useParams();
@@ -13,6 +13,6 @@ function EditToken() {
       <FormEditToken token={ token } />
     </>
   );
-}
+};
 
 export default EditToken;

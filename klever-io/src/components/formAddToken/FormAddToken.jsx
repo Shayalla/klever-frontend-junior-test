@@ -77,6 +77,6 @@ function FormAddToken() {
       </div>
     </form>
   );
-}
+};
 
 export default FormAddToken;
